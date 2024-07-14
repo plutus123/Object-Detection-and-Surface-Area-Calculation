@@ -13,7 +13,8 @@ To improve the accuracy of object detection, a custom dataset was prepared using
 The challenge involves:
 
 	1.	Object Detection: Identifying and isolating the object present in an image.
-	2.	Surface Area Calculation: Calculating the surface area of the detected object based on its shape, assuming a flat object for simplicity.
+	2.	Surface Area Calculation: Calculating the surface area of the detected object based on its shape, assuming a flat object 
+                for simplicity.
 
 # Approach
 
@@ -27,7 +28,7 @@ For images containing rectangular objects the following steps are performed:
 	4.	Bounding Box Calculation: Determining the bounding box of the object.
 	5.	Overlaying Segmented Part: Blending the segmented part onto the original image for visualization.
 	6.	Area Calculation: Calculating the area using the formula: Area = Width * Height
-  7.	Displaying Results: Annotating the image with the calculated area and visualizing the bounding box.
+        7.	Displaying Results: Annotating the image with the calculated area and visualizing the bounding box.
 
 ### Circular Object Detection and Surface Area Calculation
 
@@ -39,7 +40,7 @@ For images containing circular objects the following steps are performed:
 	4.	Enclosing Circle Calculation: Determining the smallest enclosing circle of the object.
 	5.	Overlaying Segmented Part: Blending the segmented part onto the original image for visualization.
 	6.	Area Calculation: Calculating the area using the formula: Area = pi * Radius^2
-  7.	Displaying Results: Annotating the image with the calculated area and visualizing the enclosing circle.
+        7.	Displaying Results: Annotating the image with the calculated area and visualizing the enclosing circle.
 
 # Assumptions
 
@@ -48,4 +49,6 @@ For images containing circular objects the following steps are performed:
 	•	The largest contour detected is considered the object of interest.
 
 
+# Output 
+The script saves an annotated image (output_with_combined_boxes.png) with both rectangular and circular objects annotated with their respective bounding boxes or circles and calculates their surface areas in square centimeters. It also prints out the areas and types (rectangular or circular) of all segmented objects.
 
