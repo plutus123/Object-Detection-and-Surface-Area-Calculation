@@ -2,11 +2,11 @@
 
 To improve the accuracy of object detection, a custom dataset was prepared using Roboflow for rectangular and circular objects. The YOLOv8 model was then trained on this custom dataset. The training command used is as follows:
 
-'''
+```
 
 !yolo task=segment mode=train model=yolov8m-seg.pt data=Rectangle_images/data.yaml epochs=100 imgsz=640 batch=8
 
-'''
+```
 
 # Challenge Description
 
