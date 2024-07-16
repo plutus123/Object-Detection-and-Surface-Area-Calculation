@@ -49,3 +49,7 @@ For images containing circular objects the following steps are performed:
 # Output 
 The script saves an annotated image (output_with_combined_boxes.png) with both rectangular and circular objects annotated with their respective bounding boxes or circles and calculates their surface areas in square centimeters. It also prints out the areas and types (rectangular or circular) of all segmented objects.
 
+So for square objects I am getting an output like this:
+![download](https://github.com/user-attachments/assets/c9ad574f-12d2-4775-a2bb-32531c32d1f3)
+
+
